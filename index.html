@@ -4,11 +4,13 @@
   <meta charset="UTF-8">
   <title>Prank Kosong</title>
   <style>
-    body {
+    /* Menonaktifkan scroll pada halaman */
+    html, body {
       margin: 0;
       height: 100vh;
+      overflow: hidden; /* Nonaktifkan scroll */
       background-color: white;
-      background-image: url('https://assets.kompasiana.com/items/album/2023/05/15/9a24d48eafa6ba090c13cb91bcda5323-6462152e08a8b53812152342.jpg'); /* Ganti dengan URL meme kamu */
+      background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScthnW4pwrRpAwFDhXTmF1YgEjdD-7fUMFv0qdHjvjHV-kgOwMJqfRU6Q&s=10'); /* Ganti dengan URL meme kamu */
       background-size: cover;
       background-position: center;
       display: flex;
@@ -28,7 +30,7 @@
 </head>
 <body>
   <audio id="lagu" loop preload="auto">
-    <source src="musikku.mp3" type="audio/mpeg">
+    <source src="musikku.ogg" type="audio/ogg">
     Browser kamu tidak mendukung audio.
   </audio>
 
