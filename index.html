@@ -8,6 +8,21 @@
       margin: 0;
       height: 100vh;
       background-color: white;
+      background-image: url('meme_background.jpg'); /* Ganti dengan URL meme kamu */
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+    }
+    .content {
+      font-size: 2em;
+      font-weight: bold;
+      background: rgba(0, 0, 0, 0.5);
+      padding: 20px;
+      border-radius: 10px;
     }
   </style>
 </head>
@@ -23,7 +38,7 @@
       audio.play().catch(err => {
         console.error("Audio tidak bisa diputar:", err);
       });
-    }, { once: true });
+    });
   </script>
 </body>
 </html>
