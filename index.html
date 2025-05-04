@@ -37,8 +37,9 @@
   <script>
     const audio = document.getElementById('lagu');
 
+    // Event listener pada body untuk mendeteksi klik di latar belakang
     document.body.addEventListener('click', function () {
-      // Cek jika audio belum diputar
+      // Jika audio belum diputar, putar audio
       if (audio.paused) {
         audio.play().catch(err => {
           console.error("Audio tidak bisa diputar:", err);
