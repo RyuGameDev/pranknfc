@@ -4,27 +4,10 @@
   <meta charset="UTF-8">
   <title>Prank Kosong</title>
   <style>
-    /* Menonaktifkan scroll pada halaman */
-    html, body {
+    body {
       margin: 0;
       height: 100vh;
-      overflow: hidden; /* Nonaktifkan scroll */
       background-color: white;
-      background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKH0RZw-Z1aMg_cr7mBnhofP8KO-1_9OiRH-Qu_8awzfyoTOOKuzKwsORx&s=10'); /* Ganti dengan URL meme kamu */
-      background-size: cover;
-      background-position: center;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      color: white;
-    }
-    .content {
-      font-size: 2em;
-      font-weight: bold;
-      background: rgba(0, 0, 0, 0.5);
-      padding: 20px;
-      border-radius: 10px;
     }
   </style>
 </head>
@@ -35,17 +18,12 @@
   </audio>
 
   <script>
-    const audio = document.getElementById('lagu');
-
-    // Event listener pada body untuk mendeteksi klik di latar belakang
     document.body.addEventListener('click', function () {
-      // Jika audio belum diputar, putar audio
-      if (audio.paused) {
-        audio.play().catch(err => {
-          console.error("Audio tidak bisa diputar:", err);
-        });
-      }
-    });
+      const audio = document.getElementById('lagu');
+      audio.play().catch(err => {
+        console.error("Audio tidak bisa diputar:", err);
+      });
+    }, { once: true });
   </script>
 </body>
 </html>
